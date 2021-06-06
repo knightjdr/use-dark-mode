@@ -26,7 +26,7 @@ const initialize = (storageKey, storageProvider, glbl = global) => {
 
   const isColorSchemeQuerySupported = mql.media === preferDarkQuery;
 
-  const getInitialValue = usersInitialState => (
+  const getInitialValue = (usersInitialState) => (
     isColorSchemeQuerySupported ? mql.matches : usersInitialState
   );
 

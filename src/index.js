@@ -48,7 +48,7 @@ const useDarkMode = (
     value: state,
     enable: useCallback(() => setState(true), [setState]),
     disable: useCallback(() => setState(false), [setState]),
-    toggle: useCallback(() => setState(current => !current), [setState]),
+    toggle: useCallback(() => setState((current) => !current), [setState]),
   };
 };
 
